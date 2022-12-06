@@ -1,0 +1,20 @@
+<div class="form">
+    <h1 style="text-align: center;">Post a reply</h1>
+    <form action="/post" method="post" enctype="multipart/form-data">
+        <input type="hidden" id="thread_id" name="thread_id" value="%ld">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="name" name="name"> <input tabindex="-1" type="submit" value="Submit"/><br></td>
+            </tr>
+            <tr>
+                <td>Comment</td>
+                <td><textarea id="comment" name="comment" rows="8" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+                <td>File</td>
+                <td><input type="file" id="file" name="file" accept="image/png, image/jpeg"></td>
+            </tr>
+        </table>
+    </form>
+</div>
